@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* body {
+                        background-image: url('cvet.jpg');
+        } */
+        body{
+            text-align: center !important;
+        }
+        #dr {
+            margin: 0 40% 0 40%;
+        }
+        .klasa{
+            color: purple;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: olive;
+            font-size: 24px;
+            text-align: center;
+            background-color: bisque;
+        }
+        #dr:hover {
+            color: black;
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+        }
+        /* div p {
+            background-color: aquamarine;
+            font-size: 30px;
+        } */
+        /* div>p{
+            font-size: 30px;  
+            gadja samo direktne potomke div taga
+        } */
+        /* div+p{
+            font-size: 30px;
+        } */
+        div~p{
+            font-size: 30px;
+        }
+        a {
+            font-size: 30px;
+        }
+        a:link{
+            color:greenyellow;
+        }
+        a:visited{
+            color:darkred
+        }
+        a:hover{
+            color:#FF00FF;
+        }
+        a:active{
+            color:#0000FF
+        }
+        a::before{
+            content: 'Ovo je link: ';
+        }
+        /* p:first-child{
+            border: 5px dotted silver;
+        } */
+        /* p:first-of-type{
+            border:5px dotted silver;
+        } */
+        /* p:nth-of-type(2) {
+            border:5px dotted silver;
+        } */
+        ul {
+            font-size: 25px;
+        }
+        li:nth-child(2n - 1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="klasa">Naslov</h2>
+    <p class="klasa">Tekst prvog paragrafa</p>
+    <p id="dr">Tekst drugog paragrafa</p>
+    <p>Tekst treceg paragrafa</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <div>
+        <p>Tralala</p>
+        <section>
+            <p>Tralala 2</p>
+        </section>
+    </div>
+    <p>Tekst cetvrtog paragrafa</p>
+    <div>
+        <p>Tralala 3</p>
+    </div>
+    <p>Tralala 4</p>
+    <a href="https://www.w3schools.com/" target="_blank">Link</a>
+    <br>
+    <a href="https://www.facebook.com/" target="_blank">Link2</a>
+    <hr>
+    <a href="https://www.google.com/" target="_blank">Link3</a>
+    <br>
+    <a href="https://www.color-hex.com/">Boje</a>
+</body>
+</html>

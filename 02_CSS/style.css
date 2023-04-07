@@ -1,0 +1,31 @@
+body {
+    background-color: darkgray;
+}
+h2{
+    text-align: center;
+    color:brown
+}
+img {
+    width: 40%;
+    border: 4px double whitesmoke;
+}
+p:nth-child(2n) {
+    color: brown;
+    font-size: 20px;
+}
+p:nth-child(2n-1) {
+    color:indigo;
+}
+a{
+    color: red;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+
+h6{
+    color: aquamarine;
+}
